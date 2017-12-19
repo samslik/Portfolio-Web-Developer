@@ -454,6 +454,7 @@ form span {
 button {
   margin-top: 20px;
 }
+
 /*End contact form*/
 
 /*#contact-body{*/
@@ -513,6 +514,15 @@ button {
   text-align: center;
   font-family: "Amatic SC", Helvetica, Arial, sans-serif;
   font-size: 30px;
+}
+
+.plane{
+    display: flex;
+}
+
+.plane img {
+    margin: 0 auto;
+    padding-bottom: 40px;
 }
 
  /*End Contact page*/
@@ -806,6 +816,11 @@ section.module.parallax-2 {
 /*section.module.parallax-3 {*/
   /*background-image: url("../img/demo/_small/3.jpg");*/
 /*}*/
+@media all and (max-width: 767px) {
+    .plane img {
+        width: 250px;
+    }
+}
 
 @media all and (min-width: 600px) {
   section.module h2 {

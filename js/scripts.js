@@ -1,6 +1,6 @@
 function offsetAnchor() {
     if(location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY - 80);
+        window.scrollTo(window.scrollX, window.scrollY - 60);
     }
 }
 window.addEventListener("hashchange", offsetAnchor);
@@ -26,38 +26,6 @@ if (!d.getElementById(id)) {
     js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-
-//Google map
-    function initMap() {
-        var CareerFoundry = {lat: 52.5090984, lng: 13.420983};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: CareerFoundry,
-            zoom: 15
-        });
-
-        var contentString = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Visit us!</h1>'+
-            '<div id="bodyContent">'+
-            '<p><b>CareerFoundry</b>, Köpernicker Str. 126, ' +
-            '10179 Berlin</p>'+
-            '</div>'+
-            '</div>';
-
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-
-        var marker = new google.maps.Marker({
-            position: CareerFoundry,
-            map: map,
-            title: 'CareerFoundry'
-        });
-        marker.addListener('click', function() {
-            infowindow.open(map, marker);
-        });
-    }
 
 $(document).ready(function(){
     // Tooltip

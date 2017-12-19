@@ -73,9 +73,9 @@
           </div>
         </div>
         <div class="item">
-          <img src="img/searching.jpg" alt="Boy with binoculars">
+          <img src="img/searching.jpg" alt="">
           <div class="carousel-desc">
-            <p>Do your customers always find <br> what they are looking for quickly and with ease?</p>
+            <p>Do your customers always find <br> what they are looking for <br> quickly and with ease?</p>
           </div>
         </div>
         <div class="item">
@@ -117,7 +117,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-lg-3">
+      <div class="col-xs-12 col-sm-6">
         <div class="web-feature">
           <div class="web-feature-img">
             <img src="img/responsive-web.png" alt="Computer, tablet and smartphone" class="img-responsive">
@@ -129,7 +129,7 @@
           </div>
         </div>
       </div> <!-- end col -->
-      <div class="col-xs-12 col-sm-6 col-lg-3">
+      <div class="col-xs-12 col-sm-6">
         <div class="web-feature">
           <div class="web-feature-img">
             <img src="img/kompas-web.png" alt="Compas" class="img-responsive">
@@ -139,25 +139,25 @@
           </div>
         </div>
       </div> <!-- end col -->
-      <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="web-feature">
-          <div class="web-feature-img">
-            <img src="img/lupa-web.png" alt="Magnifying Glass" class="img-responsive">
-          </div>
-          <div class="web-feature-desc">
-            <p>SEO</p>
-          </div>
-        </div>
-      </div> <!-- end col -->
-      <div class="col-xs-12 col-sm-6 col-lg-3">
-        <div class="web-feature">
-          <div class="web-feature-img">
-            <img src="img/meter-web.png" alt="Speed meter" class="img-responsive">
-          </div>
-          <div class="web-feature-desc">
-            <p>Quick loading</p>
-          </div>
-        </div>
+      <!--<div class="col-xs-12 col-sm-6 col-lg-3">-->
+        <!--<div class="web-feature">-->
+          <!--<div class="web-feature-img">-->
+            <!--<img src="img/lupa-web.png" alt="Magnifying Glass" class="img-responsive">-->
+          <!--</div>-->
+          <!--<div class="web-feature-desc">-->
+            <!--<p>SEO</p>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div> &lt;!&ndash; end col &ndash;&gt;-->
+      <!--<div class="col-xs-12 col-sm-6 col-lg-3">-->
+        <!--<div class="web-feature">-->
+          <!--<div class="web-feature-img">-->
+            <!--<img src="img/meter-web.png" alt="Speed meter" class="img-responsive">-->
+          <!--</div>-->
+          <!--<div class="web-feature-desc">-->
+            <!--<p>Quick loading</p>-->
+          <!--</div>-->
+        <!--</div>-->
       </div> <!-- end col -->
     </div> <!-- end row -->
     <div class="work-examples-box">
@@ -169,27 +169,37 @@
       <div class="row" id="work-images">
       </div> <!-- end row -->
     </div>
-    <div class="row">
+    <div class="container">
+      <div class="row">
       <div class="col-xs-12 col-md-4">
         <h2>Passion,</h2>
+        <div class="passion-img">
+          <img class="img-responsive img-thumbnail" src="img/passion-small.jpg">
+        </div>
         <p>I'm passionate about things I do and I always want to do them well. I don't  feel satisfied when my work is mediocre. </p>
-        <p><button type="button" class="btn btn-default" data-placement="right" data-toggle="tooltip" title="This section is in latin. But you know...it's never too late to learn a new language.">View
-          details &raquo;</button></p>
+        <p><button type="button" class="btn btn-default" data-placement="right" data-toggle="tooltip" title="Would you like to learn more about passion?"><a href="https://www.merriam-webster.com/dictionary/passion" target="_blank">View
+          details &raquo;</a></button></p>
       </div><!-- /col -->
       <div class="col-xs-12 col-md-4">
         <h2>Dedication,</h2>
+        <div class="dedication-img">
+          <img class="img-responsive img-thumbnail" src="img/dedication2-small.jpg">
+        </div>
         <p>I'm a fast learner. You can't stop learning if you want to be very good in your profession. This is especially important in the IT. Technology changes very quickly and technics popural yesterday will be outdated tomorrow.</p>
-        <p><button class="btn btn-default" data-placement="right" data-toggle="tooltip" title="Have you seen the paralax effect on the background in the 'About' section?" type="button">View
-          details &raquo;</button></p>
+        <p><button class="btn btn-default" data-placement="right" data-toggle="tooltip" title="Have you seen the paralax effect on the background in the 'About' section?" type="button"><a href="https://www.merriam-webster.com/dictionary/passion">
+          details &raquo;</a></button></p>
       </div><!-- /col -->
       <div class="col-xs-12 col-md-4">
         <h2>Reliability.</h2>
-        <p>After finishing this course I want to get hired as an entry level
-          developer.</p>
+        <div class="reliabity-img">
+          <img class="img-responsive img-thumbnail" src="img/reliability-small.jpg">
+        </div>
+        <p>I feel good knowing that I am trusted and that others can count on me for help and support wherever needed. I manage my time effectively, to ensure that I get my work done to agreed deadlines.</p>
         <p><button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="I learn quickly and I'mhighly motivated!" type="button">View
           details &raquo;</button></p>
       </div><!-- /col -->
     </div><!-- /row -->
+    </div>
   </div> <!-- end of work -->
 
   <!-- ABOUT page -->
@@ -224,10 +234,11 @@
             </p>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div id="experience" class="col-xs-12 col-sm-12 col-md-4">
           <div class="skills column">
             <h3>My experience</h3>
-            <ul id="skill-list">
+              <div class="list-container">
+                <ul id="skill-list">
               <li>Semantic and reusable CSS and HTML</li>
               <li>CSS frameworks: Bootstrap, Foundation</li>
               <li>Sass and Less</li>
@@ -236,8 +247,8 @@
               <li>Highly skilled with Photoshop - expert at converting PSD compositions into code</li>
               <li>Working knowledge of JavaScript, jQuery and JSON</li>
               <li>Familiar with Git as a source code management tool</li>
-              <li>Om</li>
             </ul>
+              </div>
           </div>
         </div>
       </div><!-- /row -->
@@ -259,9 +270,9 @@
     </div>
   </section>
   <section class="module content">
-    <div class="container">
-      <h2>Lorem Ipsum Dolor</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+    <div class="container contact">
+      <h2>Any questions? Thoughts? Comments?</h2>
+      <p>If so, drop me a line!</p>
     </div>
   </section>
   <div class="container-fluid" id="contact-body">
@@ -293,18 +304,18 @@
           <p id="visible-comment"></p>
         </div> <!-- end contact form -->
       </div> <!-- end col -->
-      <div class="col-xs-12 col-md-5">
-        <ul class="contact-list">
-          <li><p><span class="glyphicon glyphicon-pencil"></span>
-            example@example.com</p></li>
-          <li><p><span class="glyphicon glyphicon-phone"></span> +11 111111111
-          </p></li>
-          <li><p><span class="glyphicon glyphicon-home"></span> street 1,<br>11111
-            Postcode</p></li>
-          <li><p><span class="glyphicon glyphicon-eye-open"></span> Follow!</p>
-          </li>
-        </ul>
-      </div>
+      <!--<div class="col-xs-12 col-md-5">-->
+        <!--<ul class="contact-list">-->
+          <!--<li><p><span class="glyphicon glyphicon-pencil"></span>-->
+            <!--example@example.com</p></li>-->
+          <!--<li><p><span class="glyphicon glyphicon-phone"></span> +11 111111111-->
+          <!--</p></li>-->
+          <!--<li><p><span class="glyphicon glyphicon-home"></span> street 1,<br>11111-->
+            <!--Postcode</p></li>-->
+          <!--<li><p><span class="glyphicon glyphicon-eye-open"></span> Follow!</p>-->
+          <!--</li>-->
+        <!--</ul>-->
+      <!--</div>-->
     </div><!-- end row -->
   </div><!-- End Contact page -->
   <!-- FAQ -->
@@ -449,16 +460,16 @@
   </div>
   <!-- End of FAQ -->
 
-  <!-- youtube -->
-  <div class="container-fluid">
-    <div class="youtube-win">
-      <div class="video embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item"
-                src="https://www.youtube.com/embed/YIOT2e2vV9Y"
-                allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
+  <!--&lt;!&ndash; youtube &ndash;&gt;-->
+  <!--<div class="container-fluid">-->
+    <!--<div class="youtube-win">-->
+      <!--<div class="video embed-responsive embed-responsive-16by9">-->
+        <!--<iframe class="embed-responsive-item"-->
+                <!--src="https://www.youtube.com/embed/YIOT2e2vV9Y"-->
+                <!--allowfullscreen></iframe>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
 
   <!-- Footer -->
   <footer>
@@ -494,7 +505,5 @@
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/work.js"></script>
   <script src="js/scripts.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnWNA5dDyhxa0S2XohT2P8Mlqj90ctgEM&callback=initMap"
-          async defer></script>
-</body>
+ </body>
 </html>

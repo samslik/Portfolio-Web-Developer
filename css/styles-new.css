@@ -31,8 +31,13 @@ body {
   color: white;
   border: 2px dotted white;
   transition: .5s;
+  margin-bottom: 35px;
 }
 
+.btn a{
+  color: white;
+  padding: 6px 12px;
+}
 /*.anchor {*/
   /*padding-top: 60px;*/
 /*}*/
@@ -198,13 +203,6 @@ a:hover {
   margin-right: -15px;
 }
 
-/*@media only screen and (max-height: 1080px) {*/
-/*.carousel {*/
-/*height: 100vh;*/
-/*}*/
-/*}*/
-
-
 .carousel-desc {
   position: absolute;
   right: 3%;
@@ -252,7 +250,14 @@ a:hover {
 .carousel-control.right,
 .carousel-control.left {
   background-image: none;
-}  /*End of Carousel*/
+}
+
+@media only screen and (min-width: 1250px) {
+  .carousel-desc p {
+    font-size: 2.5em;
+  }
+}
+/*End of Carousel*/
 
 .work-img {
   display: block; /* needed to center the element with margin */
@@ -332,9 +337,9 @@ a:hover {
 }
 
 .web-feature {
-  margin: 0 auto;
-  max-width: 256px;
-  min-height: 254px;
+  margin: 30px auto 0;
+  max-width: 400px;
+  min-height: 300px;
   background-color: #73afad;
   box-shadow: 3px 2px 2px #848484;
 }
@@ -405,14 +410,16 @@ a:hover {
 .intro,
 .skills {
   margin-left: 20px;
-  margin-top: -20px;
+  /*margin-top: -20px;*/
 }
 
 #skill-list {
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 15px;
-} /*End of About page*/
+}
+
+ /*End of About page*/
 
 /*Contact page*/
 /*Contact form*/
@@ -502,6 +509,12 @@ button {
   /*border: 1px solid black;*/
 /*}*/
 
+.contact p {
+  text-align: center;
+  font-family: "Amatic SC", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+}
+
  /*End Contact page*/
 
 /*FAQ*/
@@ -572,7 +585,7 @@ button {
 }
 
 #faq-padding {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 40px;
 }
 
@@ -648,6 +661,11 @@ button {
 .copyrights {
   float: right;
 }
+
+footer {
+  height: 20px;
+  background-color: white;
+}
 /*End Footer*/
 
 /*Typography*/
@@ -690,6 +708,7 @@ label,
 
 .intro {
   margin-top: 17px;
+  padding-bottom: 20px;
 }
 
 .intro p {
@@ -748,20 +767,19 @@ section.module:last-child {
   margin-bottom: 0;
 }
 section.module h2 {
-  margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
+  margin-top: 0;
   font-size: 30px;
+  text-align: center;
 }
 section.module p {
   margin-bottom: 40px;
-  font-size: 16px;
   font-weight: 300;
 }
 section.module p:last-child {
   margin-bottom: 0;
 }
 section.module.content {
-  padding: 40px 0;
+  padding: 40px 0 0;
 }
 section.module.parallax {
   height: 600px;
@@ -782,9 +800,9 @@ section.module.parallax h1 {
 section.module.parallax-1 {
   background-image: url("../img/contact.jpg");
 }
-/*section.module.parallax-2 {*/
-  /*background-image: url("../img/demo/_small/2.jpg");*/
-/*}*/
+section.module.parallax-2 {
+  background-image: url("../img/reliability.jpg");
+}
 /*section.module.parallax-3 {*/
   /*background-image: url("../img/demo/_small/3.jpg");*/
 /*}*/
@@ -794,7 +812,7 @@ section.module.parallax-1 {
     font-size: 42px;
   }
   section.module p {
-    font-size: 20px;
+    font-size: 30px;
   }
   section.module.parallax h1 {
     font-size: 96px;
@@ -805,3 +823,29 @@ section.module.parallax-1 {
     font-size: 160px;
   }
 }
+
+/*musi byc tak nisko bo wyzej zmienia sie czcionka, moze by te czcionki przesunac na sama gore?*/
+@media all and (max-width: 991px) {
+  #experience {
+    padding:0 5px 25px 5px;
+  }
+  .skills {
+    margin-left: 0;
+    border: 1px solid #5f8e8a;
+  }
+  .skills h3 {
+    padding-bottom: 10px;
+    font-size: 27px;
+  }
+
+  #skill-list {
+    margin: auto;
+    width: 75%;
+  }
+
+  .list-container {
+    margin: auto;
+    width: 60%;
+  }
+}
+
